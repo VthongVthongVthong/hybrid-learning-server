@@ -14,4 +14,4 @@ COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # 6. Lệnh chạy server
-CMD ["python", "server.py"]
+CMD ["gunicorn", "-w", "2", "-b", "0.0.0.0:5000", "server.py:app"]

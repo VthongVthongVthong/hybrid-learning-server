@@ -190,7 +190,8 @@ Code của tôi:
                     }
                 }
             } catch (e) {
-                terminalOutput.innerHTML = '<span style="color: var(--danger)">Lỗi: Không thể kết nối tới local server. Đảm bảo bạn đã chạy "python server.py"</span>';
+                console.error("Chi tiết lỗi:", e);
+                terminalOutput.innerHTML = `<span style="color: var(--danger)">Lỗi kết nối hoặc Server đang bận: ${e.message}.<br>Hãy đợi vài giây và thử lại!</span>`;
             } finally {
                 runBtn.disabled = false;
             }
