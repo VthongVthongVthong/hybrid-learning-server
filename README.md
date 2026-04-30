@@ -1,6 +1,7 @@
 # HybCode – Nền tảng Học tập Lai (Hybrid Learning) 🚀
 
 > *"Ở năm 2026, một lập trình viên giỏi không phải là người code nhanh hơn AI, mà là người nắm vững nền tảng kiến trúc để có thể kiểm định và định hướng AI một cách chuẩn xác."*
+<img width="2561" height="1199" alt="tải xuống (37)" src="https://github.com/user-attachments/assets/c42ff28d-3fca-45d6-9243-190e61addf4c" />
 
 ---
 
