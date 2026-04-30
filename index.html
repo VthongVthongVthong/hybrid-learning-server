@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid Learning Code Practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="icon/icon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar: Exercises List -->
+        <aside class="sidebar glass-panel">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="ri-braces-fill"></i>
+                    <span>HybCode</span>
+                    <button id="info-btn" class="icon-btn" style="margin-left:auto; font-size:1.2rem;"
+                        title="Cách học Hybrid Learning"><i class="ri-information-line"></i></button>
+                </div>
+                <p class="subtitle">Lấy lại nền tảng, Làm chủ AI</p>
+            </div>
+
+            <div class="exercise-list">
+                <!-- Section 1 -->
+                <div class="list-section">
+                    <h3>Kỹ thuật lập trình cơ bản</h3>
+                    <div class="exercise-item active" data-id="basic-1">
+                        <i class="ri-code-box-line"></i><span>Kiểm tra số nguyên tố</span>
+                    </div>
+                    <div class="exercise-item" data-id="basic-2"><i class="ri-code-box-line"></i><span>Kiểm tra số hoàn
+                            hảo</span></div>
+                    <div class="exercise-item" data-id="basic-3"><i class="ri-code-box-line"></i><span>Kiểm tra số đối
+                            xứng</span></div>
+                    <div class="exercise-item" data-id="basic-4"><i class="ri-calculator-line"></i><span>Tính giai
+                            thừa</span></div>
+                    <div class="exercise-item" data-id="basic-5"><i class="ri-calculator-line"></i><span>Tìm số
+                            Fibonacci thứ n</span></div>
+                    <div class="exercise-item" data-id="basic-6"><i class="ri-exchange-box-line"></i><span>Chuyển đổi cơ
+                            số (Nhị phân, Thập phân, Hexa)</span></div>
+                    <div class="exercise-item" data-id="basic-7"><i class="ri-text"></i><span>Đảo ngược chuỗi</span>
+                    </div>
+                    <div class="exercise-item" data-id="basic-8"><i class="ri-text"></i><span>Kiểm tra chuỗi
+                            Palindrome</span></div>
+                    <div class="exercise-item" data-id="basic-9"><i class="ri-text-spacing"></i><span>Đếm tần suất xuất
+                            hiện của ký tự</span></div>
+                    <div class="exercise-item" data-id="basic-10"><i class="ri-text-wrap"></i><span>Chuẩn hóa chuỗi (xóa
+                            khoảng trắng, viết hoa)</span></div>
+                    <div class="exercise-item" data-id="basic-11"><i class="ri-layout-column-line"></i><span>Tìm phần tử
+                            lớn nhất / lớn thứ hai trong mảng</span></div>
+                    <div class="exercise-item" data-id="basic-12"><i class="ri-layout-grid-line"></i><span>Cộng hai ma
+                            trận</span></div>
+                    <div class="exercise-item" data-id="basic-13"><i class="ri-layout-grid-line"></i><span>Nhân hai ma
+                            trận</span></div>
+                </div>
+
+                <!-- Section 2 -->
+                <div class="list-section">
+                    <h3>Cấu trúc dữ liệu</h3>
+                    <div class="exercise-item" data-id="ds-1"><i class="ri-link"></i><span>Triển khai Single Linked
+                            List</span></div>
+                    <div class="exercise-item" data-id="ds-2"><i class="ri-links-line"></i><span>Triển khai Double
+                            Linked List</span></div>
+                    <div class="exercise-item" data-id="ds-3"><i class="ri-list-check"></i><span>Đảo ngược Linked
+                            List</span></div>
+                    <div class="exercise-item" data-id="ds-4"><i class="ri-stack-line"></i><span>Triển khai Stack</span>
+                    </div>
+                    <div class="exercise-item" data-id="ds-5"><i class="ri-queue-line"></i><span>Triển khai Queue</span>
+                    </div>
+                    <div class="exercise-item" data-id="ds-6"><i class="ri-parentheses-line"></i><span>Kiểm tra tính hợp
+                            lệ của dấu ngoặc</span></div>
+                    <div class="exercise-item" data-id="ds-7"><i class="ri-hashtag"></i><span>Triển khai Hash
+                            Table</span></div>
+                    <div class="exercise-item" data-id="ds-8"><i class="ri-node-tree"></i><span>Triển khai Binary Search
+                            Tree (BST)</span></div>
+                    <div class="exercise-item" data-id="ds-9"><i class="ri-mind-map"></i><span>Duyệt cây nhị phân</span>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div class="list-section">
+                    <h3>Thuật toán</h3>
+                    <div class="exercise-item" data-id="algo-1"><i class="ri-sort-asc"></i><span>Bubble Sort</span>
+                    </div>
+                    <div class="exercise-item" data-id="algo-2"><i class="ri-sort-asc"></i><span>Selection Sort</span>
+                    </div>
+                    <div class="exercise-item" data-id="algo-3"><i class="ri-sort-asc"></i><span>Insertion Sort</span>
+                    </div>
+                    <div class="exercise-item" data-id="algo-4"><i class="ri-sort-asc"></i><span>Merge Sort</span></div>
+                    <div class="exercise-item" data-id="algo-5"><i class="ri-sort-asc"></i><span>Quick Sort</span></div>
+                    <div class="exercise-item" data-id="algo-6"><i class="ri-search-line"></i><span>Linear Search</span>
+                    </div>
+                    <div class="exercise-item" data-id="algo-7"><i class="ri-search-eye-line"></i><span>Binary
+                            Search</span></div>
+                    <div class="exercise-item" data-id="algo-8"><i class="ri-building-4-line"></i><span>Bài toán Tháp Hà
+                            Nội</span></div>
+                    <div class="exercise-item" data-id="algo-9"><i class="ri-vip-crown-line"></i><span>Bài toán Tám quân
+                            hậu (N-Queens)</span></div>
+                    <div class="exercise-item" data-id="algo-10"><i class="ri-file-copy-2-line"></i><span>Sinh tất cả
+                            các tập con</span></div>
+                    <div class="exercise-item" data-id="algo-11"><i class="ri-share-forward-line"></i><span>Duyệt đồ thị
+                            theo chiều rộng (BFS)</span></div>
+                    <div class="exercise-item" data-id="algo-12"><i class="ri-download-line"></i><span>Duyệt đồ thị theo
+                            chiều sâu (DFS)</span></div>
+                    <div class="exercise-item" data-id="algo-13"><i class="ri-route-line"></i><span>Tìm đường đi ngắn
+                            nhất trong mê cung</span></div>
+                </div>
+
+                <!-- Section 4 -->
+                <div class="list-section">
+                    <h3>Lập trình OOP & Thiết kế</h3>
+                    <div class="exercise-item" data-id="oop-1"><i class="ri-group-line"></i><span>Quản lý sinh
+                            viên</span></div>
+                    <div class="exercise-item" data-id="oop-2"><i class="ri-book-3-line"></i><span>Quản lý thư
+                            viện</span></div>
+                    <div class="exercise-item" data-id="oop-3"><i class="ri-movie-2-line"></i><span>Đặt vé xem
+                            phim</span></div>
+                    <div class="exercise-item" data-id="oop-4"><i class="ri-bank-card-line"></i><span>Quản lý tài khoản
+                            ngân hàng</span></div>
+                </div>
+            </div>
+            <div class="sidebar-footer">
+                <p>Idea by Vthong w <i class="ri-heart-fill"></i></p>
+            </div>
+        </aside>
+
+        <!-- Main Content: Workspace -->
+        <main class="workspace">
+            <!-- Problem Description Header -->
+            <header class="problem-header glass-panel">
+                <h1 id="problem-title">Đảo ngược Linked List</h1>
+                <div class="problem-tags">
+                    <span class="tag">Dễ</span>
+                    <span class="tag">Linked List</span>
+                    <span class="tag">Con trỏ</span>
+                </div>
+                <p id="problem-desc">
+                    Cho một danh sách liên kết đơn (Singly Linked List). Hãy viết hàm đảo ngược danh sách đó. <br>
+                    <strong>Yêu cầu:</strong> Không sử dụng mảng phụ để lưu trữ, độ phức tạp không gian O(1) và thời
+                    gian O(N).
+                </p>
+            </header>
+
+            <!-- Workspace Tabs -->
+            <div class="workspace-area glass-panel">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="sandbox">
+                        <i class="ri-flask-fill"></i> 1. Sandbox (Tự duy)
+                    </button>
+                    <button class="tab-btn" data-tab="reverse">
+                        <i class="ri-git-merge-line"></i> 2. Reverse Engineering
+                    </button>
+                </div>
+
+                <div class="tabs-content">
+                    <!-- Tab 1: Sandbox -->
+                    <div class="tab-pane active" id="sandbox-tab">
+                        <div class="split-view">
+                            <div class="pane logic-pane">
+                                <div class="pane-header">
+                                    <i class="ri-mind-map"></i> Flowchart / Mã giả (Tư duy không màn hình)
+                                </div>
+                                <textarea id="pseudocode-editor"
+                                    placeholder="Viết mã giả hoặc phác thảo logic tại đây...&#10;Ví dụ:&#10;1. Cần 3 con trỏ: prev, curr, next&#10;2. Bắt đầu vòng lặp while (curr != null)&#10;..."></textarea>
+                            </div>
+                            <div class="pane code-pane">
+                                <div class="pane-header">
+                                    <i class="ri-code-s-slash-line"></i> Gõ Code Chay (Muscle Memory)
+                                </div>
+                                <!-- Notice: disabled autocomplete, spellcheck to force manual coding -->
+                                <textarea id="code-editor" class="raw-code" spellcheck="false" autocomplete="off"
+                                    placeholder="// Hãy tự tay gõ từng dòng code...&#10;class Main {&#10;    public static void main(String[] args) {&#10;        System.out.println(&quot;Hello, Hybrid Learning!&quot;);&#10;    }&#10;}"></textarea>
+                            </div>
+                        </div>
+                        <div class="terminal-pane glass-panel">
+                            <div class="terminal-header">
+                                <span><i class="ri-terminal-box-line"></i> Terminal</span>
+                                <button id="btn-run-code" class="run-btn"><i class="ri-play-fill"></i> Run Code</button>
+                            </div>
+                            <div class="terminal-output" id="terminal-output">
+                                > Sẵn sàng chạy code Java...
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab 2: Reverse Engineering -->
+                    <div class="tab-pane" id="reverse-tab">
+                        <div class="reverse-header">
+                            <p>Thay vì yêu cầu AI viết toàn bộ, hãy đọc code chuẩn của Senior (AI tạo) bên trái và tự
+                                tay gõ lại theo cách hiểu của bạn bên phải.</p>
+                        </div>
+                        <div class="split-view">
+                            <div class="pane ai-code-pane">
+                                <div class="pane-header ai-header">
+                                    <i class="ri-robot-line"></i> Code chuẩn (AI Tutor / Senior)
+                                </div>
+                                <pre><code class="language-java" id="ai-reference-code">
+/**
+ * Đảo ngược Linked List (Chuẩn Clean Code)
+ * Time Complexity: O(N)
+ * Space Complexity: O(1)
+ */
+class ListNode {
+    int val;
+    ListNode next;
+    ListNode(int x) { val = x; }
+}
+
+class Solution {
+    public ListNode reverseList(ListNode head) {
+        ListNode prev = null;
+        ListNode curr = head;
+        
+        while (curr != null) {
+            ListNode nextTemp = curr.next; // Lưu trữ node tiếp theo
+            curr.next = prev;              // Đảo ngược con trỏ
+            prev = curr;                   // Tiến prev lên 1 bước
+            curr = nextTemp;               // Tiến curr lên 1 bước
+        }
+        
+        return prev; // prev sẽ là head mới
+    }
+}
+                                </code></pre>
+                            </div>
+                            <div class="pane code-pane">
+                                <div class="pane-header">
+                                    <i class="ri-keyboard-line"></i> Đọc - Phá - Sửa (Tự gõ lại)
+                                </div>
+                                <textarea id="rewrite-editor" class="raw-code" spellcheck="false" autocomplete="off"
+                                    placeholder="Đọc code bên trái và tự tay gõ lại tại đây để rèn luyện tư duy..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Right Panel: AI Tutor -->
+        <aside class="ai-panel glass-panel">
+            <div class="ai-header">
+                <i class="ri-robot-2-fill"></i>
+                <h2>Gia sư AI</h2>
+            </div>
+
+            <div class="ai-tutor-info">
+                <p>Tôi ở đây để giúp bạn tư duy, <strong>không phải làm bài hộ</strong>. Hãy chọn cách tôi nên gợi ý cho
+                    bạn:</p>
+            </div>
+
+            <div class="ai-actions">
+                <button class="ai-btn" id="btn-find-error">
+                    <i class="ri-bug-line"></i>
+                    <span>Chỉ ra dòng lỗi, không cho code</span>
+                </button>
+                <button class="ai-btn" id="btn-hint">
+                    <i class="ri-lightbulb-flash-line"></i>
+                    <span>Gợi ý vòng lặp/điều kiện</span>
+                </button>
+                <button class="ai-btn" id="btn-review">
+                    <i class="ri-code-box-line"></i>
+                    <span>Review Big O & Clean Code</span>
+                </button>
+            </div>
+
+            <div class="prompt-generator" id="prompt-generator">
+                <div class="generator-header">
+                    <span><i class="ri-magic-line"></i> Phản hồi từ AI</span>
+                    <div id="ai-loading" class="hidden">
+                        <i class="ri-loader-4-line spin-anim"></i>
+                    </div>
+                </div>
+                <div class="prompt-content ai-response-content" id="prompt-content">
+                    AI Tutor đã sẵn sàng. Hãy viết code và chọn một trong các gợi ý bên trên!
+                </div>
+            </div>
+        </aside>
+        <!-- Info Modal -->
+        <div id="info-modal" class="modal-overlay hidden">
+            <div class="modal-content glass-panel">
+                <div class="modal-header">
+                    <h2>Phương pháp Học tập Lai (Hybrid Learning)</h2>
+                    <button id="close-modal-btn" class="icon-btn"><i class="ri-close-line"></i></button>
+                </div>
+                <div class="modal-body">
+                    <p>Tình trạng phụ thuộc vào AI để vượt qua các bài tập ngắn hạn là một cái bẫy rất phổ biến từ giai
+                        đoạn bùng nổ AI năm 2023. Việc bạn tự đánh giá được điểm yếu về lý thuyết và kỹ năng "thực
+                        chiến" là bước quan trọng nhất để định hình lại cách học. Ở năm 2026, một lập trình viên giỏi
+                        không phải là người code nhanh hơn AI, mà là người nắm vững nền tảng kiến trúc để có thể kiểm
+                        định và định hướng AI một cách chuẩn xác.</p>
+                    <br>
+                    <p>Chúng ta hãy cùng thiết lập lại phương pháp học theo mô hình <strong>Học tập Lai (Hybrid
+                            Learning)</strong>. Mô hình này giúp bạn vừa lấy lại gốc, vừa nâng cấp kỹ năng điều khiển
+                        AI:</p>
+
+                    <h3>1. Nguyên tắc "Hộp cát" (Sandbox Rule) 🏗️</h3>
+                    <p>Hãy vạch ra ranh giới rõ ràng giữa việc tự tư duy và việc nhờ AI hỗ trợ.</p>
+                    <ul>
+                        <li><strong>Tư duy không màn hình:</strong> Khi gặp một bài toán thuật toán (DSA) hoặc một logic
+                            mới, hãy đóng trình duyệt lại. Dùng giấy bút để vẽ sơ đồ khối (flowchart) hoặc viết mã giả
+                            (pseudo-code) để giải quyết luồng logic trước.</li>
+                        <li><strong>Gõ code "chay":</strong> Tắt các công cụ auto-complete mạnh (như GitHub Copilot) khi
+                            đang luyện tập nền tảng. Việc tự tay gõ từng dòng code, tự nhớ dấu chấm phẩy hay ngoặc nhọn
+                            sẽ giúp bạn xây dựng lại "muscle memory" (ký ức cơ bắp) và sự nhạy bén với lỗi cú pháp.</li>
+                    </ul>
+
+                    <h3>2. Chuyển AI từ "Người làm thuê" thành "Gia sư" 🧠</h3>
+                    <p>Thay đổi hoàn toàn tư duy đặt câu hỏi (prompting) của bạn.</p>
+                    <ul>
+                        <li><strong>Tránh:</strong> "Viết cho tôi thuật toán đảo ngược danh sách liên kết." (Cách này
+                            giết chết tư duy).</li>
+                        <li><strong>Nên dùng:</strong> "Tôi đang cố viết thuật toán đảo ngược danh sách liên kết nhưng
+                            bị kẹt ở vòng lặp while. Đây là code của tôi. Đừng đưa ra code hoàn chỉnh, hãy chỉ ra tôi
+                            đang hiểu sai ở dòng nào và cho tôi 1 gợi ý nhỏ."</li>
+                        <li><strong>Dùng AI để kiểm chứng:</strong> Sau khi tự viết xong một đoạn code chạy được, hãy
+                            gửi nó cho AI và hỏi: "Hãy review đoạn code này như một Senior Developer. Độ phức tạp Big O
+                            hiện tại là bao nhiêu? Có cách nào viết theo chuẩn Clean Code hơn không?"</li>
+                    </ul>
+
+                    <h3>3. Phương pháp "Đọc - Phá - Sửa" (Reverse Engineering) 🔍</h3>
+                    <p>Thay vì yêu cầu AI viết toàn bộ dự án, hãy:</p>
+                    <ol>
+                        <li>Tự viết một tính năng cốt lõi bằng kiến thức của mình.</li>
+                        <li>Yêu cầu AI đưa ra một phiên bản nâng cao hoặc sử dụng design pattern tốt hơn.</li>
+                        <li>Đọc từng dòng code của AI, so sánh với code của bạn và tự tay gõ lại theo cách hiểu mới.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Warning -->
+        <div id="mobile-warning">
+            <div class="warning-content">
+                <i class="ri-computer-line"></i>
+                <p>Chưa hỗ trợ IOS/Android,<br>Hãy truy cập bằng máy tính nhé <i class="ri-heart-fill"></i></p>
+            </div>
+        </div>
+
+        <script src="https://js.puter.com/v2/"></script>
+        <script src="descriptions.js"></script>
+        <script src="solutions.js"></script>
+        <script src="tests.js"></script>
+        <script src="app.js"></script>
+</body>
+
+</html>
